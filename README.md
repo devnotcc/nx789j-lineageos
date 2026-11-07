@@ -24,7 +24,7 @@ Screenshots will follow once it has been installed on a phone.
 
 Everything listed as working for the [Evolution X build](https://github.com/devnotcc/nx789j-evox#what-works)
 uses the same device tree and should behave the same here, but none of it has been confirmed on
-LineageOS. Known not to work (same as Evolution X): Google Wallet tap-to-pay.
+LineageOS. Not ported yet (same as Evolution X): the shoulder triggers and the RGB lighting.
 
 ## Install
 
