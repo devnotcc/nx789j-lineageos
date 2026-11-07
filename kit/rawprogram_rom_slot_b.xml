@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<!-- Writes the ROM to slot B (use the slot check-phone.ps1 reports): boot, init_boot, vendor_boot, dtbo, vbmeta, vbmeta_system, super.
+     NX789J (REDMAGIC 10 Pro / 10S Pro). Partition positions from the phone's own partition table;
+     run check-phone.ps1 first: it stops if your phone's table differs. Never edit these by hand. -->
+<data>
+  <program filename="boot.img" label="boot_b" physical_partition_number="4" start_sector="465632" num_partition_sectors="24576" SECTOR_SIZE_IN_BYTES="4096"/>
+  <program filename="init_boot.img" label="init_boot_b" physical_partition_number="4" start_sector="686048" num_partition_sectors="2048" SECTOR_SIZE_IN_BYTES="4096"/>
+  <program filename="vendor_boot.img" label="vendor_boot_b" physical_partition_number="4" start_sector="635296" num_partition_sectors="24576" SECTOR_SIZE_IN_BYTES="4096"/>
+  <program filename="dtbo.img" label="dtbo_b" physical_partition_number="4" start_sector="490276" num_partition_sectors="6144" SECTOR_SIZE_IN_BYTES="4096"/>
+  <program filename="vbmeta.img" label="vbmeta_b" physical_partition_number="4" start_sector="490260" num_partition_sectors="16" SECTOR_SIZE_IN_BYTES="4096"/>
+  <program filename="vbmeta_system.img" label="vbmeta_system_b" physical_partition_number="0" start_sector="4203288" num_partition_sectors="16" SECTOR_SIZE_IN_BYTES="4096"/>
+  <program filename="super.img" label="super" physical_partition_number="0" start_sector="8968" num_partition_sectors="4194304" SECTOR_SIZE_IN_BYTES="4096"/>
+</data>

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<!-- Reads only: the partition tables of LUN 0 and LUN 4 and the unlock flag (devinfo). Writes nothing.
+     NX789J (REDMAGIC 10 Pro / 10S Pro). Partition positions from the phone's own partition table;
+     run check-phone.ps1 first: it stops if your phone's table differs. Never edit these by hand. -->
+<data>
+  <read filename="gpt_lun0.bin" physical_partition_number="0" start_sector="0" num_partition_sectors="6" SECTOR_SIZE_IN_BYTES="4096" label="PrimaryGPT"/>
+  <read filename="gpt_lun4.bin" physical_partition_number="4" start_sector="0" num_partition_sectors="6" SECTOR_SIZE_IN_BYTES="4096" label="PrimaryGPT"/>
+  <read filename="devinfo.bin" physical_partition_number="4" start_sector="696954" num_partition_sectors="1" SECTOR_SIZE_IN_BYTES="4096" label="devinfo"/>
+</data>

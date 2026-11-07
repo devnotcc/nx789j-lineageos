@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<!-- ERASES ALL DATA: zeros over metadata and the start of userdata; Android formats both on the next boot. Only for a first install or when switching OS.
+     NX789J (REDMAGIC 10 Pro / 10S Pro). Partition positions from the phone's own partition table;
+     run check-phone.ps1 first: it stops if your phone's table differs. Never edit these by hand. -->
+<data>
+  <program filename="zeros_64M.img" label="metadata" physical_partition_number="0" start_sector="4203304" num_partition_sectors="16384" SECTOR_SIZE_IN_BYTES="4096"/>
+  <program filename="zeros_64M.img" label="userdata" physical_partition_number="0" start_sector="4350760" num_partition_sectors="16384" SECTOR_SIZE_IN_BYTES="4096"/>
+</data>
